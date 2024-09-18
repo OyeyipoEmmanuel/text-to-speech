@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Error COntainer -->
+
+    <div id="errContainer">
+        <p id="errMessage"></p>
+        <i id="close">&times;</i>
+    </div>
+
+
+    <div id="container">
+      <div id="cont">
+        <textarea type="text" id="text" placeholder="Input Text"></textarea>
+        <div id="featuresContainer">
+          <div id="col1">
+            <label>Select Speed</label>
+            <select name="" id="speed">
+              <option value="0.5">0.5</option>
+              <option value="1.0">1.0</option>
+              <option value="1.5">1.5</option>
+              <option value="2.0">2.0</option>
+            </select>
+          </div>
+          <div id="col2">
+            <label>Select Language</label>
+            <select name="" id="lang">
+              <option value="en-GB">English (UK)</option>
+              <option value="en-US">English (US)</option>
+              <!-- <option value="de-DE">German</option> -->
+              <option value="fr-FR">French</option>
+              <option value="es-ES">Spanish</option>
+            </select>
+          </div>
+        </div>
+        <button id="btnConvert">Convert to speech</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
